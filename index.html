@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Minion Speakt</title>
     <style>
-        textarea{
+
+        body {
+             @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+             font-family: 'Oswald', sans-serif;
+            background-image: url(21.jpg);
+            margin:0;
+            padding:0;
+            font-family: sans-serif;
+            background-size: cover;
+            background-position: center;
+            height:100vh;
+            width: 100%;
+        }
+
+
+        textarea {
             width: 85%;
             padding: 1rem;
             margin: 1rem;
             max-width: 600px;
             margin: auto;
             display: block;
-            height:30vh;
+            height: 30vh;
         }
-        #btn{
-            padding: 0.5rem;
-            margin: 1rem ;
+
+        #btn {
+            padding: 1rem 2rem ;
+            margin: 1rem;
+            border-radius: 1rem;
+            
+            background-color: rgb(250, 210, 32);
+            color:black;
+            border:2px solid white;
+            font-weight: bold;
+            font-size: large;
+           
         }
-        #output{
+
+        #output {
             border: 2px solid black;
             width: 85%;
             padding: 1rem;
@@ -27,15 +53,54 @@
             max-width: 600px;
             margin: auto;
             display: block;
-            height:30vh;
+            height: 30vh;
+            background-color: white;
+        }
+
+       
+        .container {
+            width: 500px;
+            box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+            background: white;
+            padding:20px;
+            margin: 8% auto 0;
+            text-align: center;
+            box-shadow: 0 0 40px 20px;
+            
+        }
+        #navigation{
+            background-color: rgb(250, 210, 32);
+            padding: 1rem 2rem;
+        }
+        #footer{
+            background-color: rgb(250, 210, 32);
+            padding: 1rem 2rem;
+            font-weight: bolder;
+            font-size: large;
+
         }
     </style>
 </head>
+
 <body>
-    <textarea id="input" placeholder="Write your text here " ></textarea>
-    <button id="btn">Browse</button>
-    <div id="output"></div>
-    <script src="app.js" style="text/javascript"></script>
+    <div class="container">
+        <nav id="navigation">
+            <h1>Minion Speak Language</h1>
+        </nav>
     
+            <br>
+            <textarea id="input" placeholder="Write your text here "></textarea>
+            <button id="btn">Browse</button>
+            <div id="output"></div><br>
+            <footer id="footer">
+            <p>Your Love for minion brings you here. It's fun to know  minion language</p>
+
+            </footer>
+        
+    </div>
+
+    <script src="app.js" style="text/javascript"></script>
+
 </body>
+
 </html>
